@@ -42,7 +42,7 @@ public class WebConfig implements WebMvcConfigurer {
 	public ViewResolver internalResourceViewResolver() {
 	    InternalResourceViewResolver bean = new InternalResourceViewResolver();
 	    bean.setViewClass(JstlView.class);
-	    bean.setPrefix("/WEB-INF/view/");
+	    bean.setPrefix("/view/");
 	    bean.setSuffix(".jsp");  // se o prefixo for omitido, a extensão do arquivo deve ser informada return do Controler
 	   // bean.setOrder(0);
 	    return bean;
