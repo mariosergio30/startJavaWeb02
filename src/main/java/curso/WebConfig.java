@@ -4,15 +4,15 @@ package curso;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.bind.annotation.RequestMapping;
+
 import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
-import org.springframework.web.servlet.config.annotation.ViewResolverRegistry;
+
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import org.springframework.web.servlet.view.InternalResourceViewResolver;
 import org.springframework.web.servlet.view.JstlView;
-import org.springframework.web.servlet.view.ResourceBundleViewResolver;
+
 
 
 /* A implementação de uma WebMvcConfigurer permite ao Spring MVC 
@@ -42,7 +42,7 @@ public class WebConfig implements WebMvcConfigurer {
 	public ViewResolver internalResourceViewResolver() {
 	    InternalResourceViewResolver bean = new InternalResourceViewResolver();
 	    bean.setViewClass(JstlView.class);
-	    bean.setPrefix("/view/");
+	    bean.setPrefix("/WEB-INF/view/");
 	    bean.setSuffix(".jsp");  // se o prefixo for omitido, a extensão do arquivo deve ser informada return do Controler
 	   // bean.setOrder(0);
 	    return bean;

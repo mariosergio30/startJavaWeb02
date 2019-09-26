@@ -14,7 +14,7 @@
 	<hr>
 	<strong>Exemplo: Response a partir de uma VIEW jsp (MVC)</strong>
 	<hr>
-	<img src="../img/logoAccenture.PNG" width="150">
+	<img src="../img/logomarca.png" width="150">
 	<h2>Formação Profissional</h2>
 
 

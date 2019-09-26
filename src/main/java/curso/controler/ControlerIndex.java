@@ -4,6 +4,7 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 
 /* @Controller indica que essa a clase é um controlador WEB (expõe os métodos da classe como recursos web)  
@@ -23,6 +24,6 @@ public class ControlerIndex {
 				
 	     return "index";  // responde ao browser com a view index.jsp (ver WebConfig)
 	}
-
-    
+	
+	
 }
